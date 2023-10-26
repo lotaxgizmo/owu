@@ -1,23 +1,26 @@
-import logo from './logo.svg';
 import './App.css';
+import Hero from './components/Hero';
+import Heromob from './components/Heromob';
+import About from './components/About';
+import Blastoff from './components/Blastoff';
+import Anime from './components/Anime';
+import Howto from './components/Howto';
+import Roadmap from './components/Roadmap';
+import Contribute from './components/Contribute';
+import Footer from './components/Footer';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="flex flex-col items-center justify-center">
+      <Hero />
+      <Heromob />
+      <About />
+      <Blastoff />
+      <Anime />
+      <Howto />
+      <Roadmap />
+      <Contribute />
+      <Footer />
     </div>
   );
 }
