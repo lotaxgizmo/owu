@@ -14,7 +14,7 @@ function Heromob() {
         <div className='block lg:hidden   w-screen mb-20'>
 
             <div className='mainbg w-screenc mx-4 h-[5d00px] border-2 rounded-3xl border-white mt-6
-            mx-20s overflow-clip  bg-blue-900 relative flex flex-col items-center
+            mx-20s overflow-clip  dbg-blue-900 relative flex flex-col items-center
             '>
                 <img src={Owugirl} alt="" className=' absolute  bottom-0 rotate-slowlyx z-[2] animate-bouncex w-60' />
                 <div className="absolute flex justify-center items-center top-[-350px] lefte-[-330px]  z-0">

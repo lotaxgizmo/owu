@@ -13,7 +13,7 @@ function Hero() {
     return (
         <div className='hidden lg:flex flex-col justify-center align-middle self-center items-center '>
             <div className='mainbg w-[1250px] h-[5d00px] border-2 rounded-3xl border-white my-6
-            mx-20s overflow-clip  bg-blue-900 relative flex flex-col items-center
+            mx-20s overflow-clip  dbg-blue-900 relative flex flex-col items-center
             '>
                 <img src={Owugirl} alt="" className=' absolute  bottom-0 rotate-slowlyx z-[2] animate-bouncex' />
                 <div className="absolute flex justify-center items-center top-[-300px] left-[-330px]  z-0">
