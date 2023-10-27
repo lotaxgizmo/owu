@@ -8,7 +8,7 @@ import HamburgerHeader from './components/HamburgerHeader';
 
 ReactDOM.render(
   <React.StrictMode>
-    <div className="relative flex items-center flex-col">
+    <div className="relative flex items-center flex-col overflow-hidden">
       <HamburgerHeader />
       <App />
     </div>
