@@ -8,10 +8,17 @@ import Moons from '../assets/moons.svg'
 import Owuhero from '../assets/Owuhero.svg'
 import Owugirl from '../assets/Owugirl.svg'
 import Apemain from '../assets/Apemain.svg'
+import Rocketr from '../assets/Rocketr.png'
+import Rocketl from '../assets/Rocketl.png'
 
 function Heromob() {
     return (
-        <div className='block lg:hidden   w-screen mb-20'>
+        <div className='block lg:hidden   w-screen my-20 relative'>
+            <img src={Rocketr} alt="" className='absolute w-60 right-[-88px] bottom-[-60px] z-20
+            
+            ' />
+
+            <img src={Rocketl} alt="" className='absolute w-40 left-[-57px] bottom-[-88px] z-20' />
 
             <div className='mainbg w-screenc mx-4 h-[5d00px] border-2 rounded-3xl border-white mt-6
             mx-20s overflow-clip  dbg-blue-900 relative flex flex-col items-center

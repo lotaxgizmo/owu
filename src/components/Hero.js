@@ -8,10 +8,15 @@ import Moons from '../assets/moons.svg'
 import Owuhero from '../assets/Owuhero.svg'
 import Owugirl from '../assets/Owugirl.svg'
 import Apemain from '../assets/Apemain.svg'
+import Rocketr from '../assets/Rocketr.png'
+import Rocketl from '../assets/Rocketl.png'
 
 function Hero() {
     return (
-        <div className='hidden lg:flex flex-col justify-center align-middle self-center items-center '>
+        <div className='hidden lg:flex flex-col justify-center align-middle self-center items-center relative'>
+            <img src={Rocketr} alt="" className='absolute w-[828px] right-[-343px] bottom-[-302px] z-20' />
+            <img src={Rocketl} alt="" className='absolute w-[556px] left-[-219px] bottom-[-400px] z-20' />
+
             <div className='mainbg w-[1250px] h-[5d00px] border-2 rounded-3xl border-white my-6
             mx-20s overflow-clip  dbg-blue-900 relative flex flex-col items-center
             '>
@@ -48,7 +53,7 @@ function Hero() {
                 </p>
                 <img src={Owuhero} alt="" className='  z-10 -mt-24 mb-40' />
 
-                <a href="http://" target="_blank" rel="noopener noreferrer" className=' z-10'>
+                <a href="http://" target="_blank" rel="noopener noreferrer" className=' z-30'>
                     <img src={Apemain} alt="" className='  z-10  shadow-2xl ' />
                 </a>
             </div>

@@ -1,17 +1,17 @@
 import React from 'react'
 import babymoon from '../assets/babymoon.svg'
-import Apeblack from '../assets/Apeblack.svg'
+import Apenow222 from '../assets/Apenow222.svg'
 import Dextools from '../assets/Dextools.svg'
 
 
 function Anime() {
     return (
-        <div className='flex flex-col items-center text-center text-black bg-white backdrop-blur-sm pb-20 mb-20'>
+        <div className='flex flex-col items-center text-center text-white bg-white/20 backdrop-blur-sm pb-20 mb-20'>
             <h2 className='text-5xl mt-5 mb-5 lg:text-9xl'>
                 Anime Extrava
                 ganza
             </h2>
-            <p className='text-lg flex mb-10 px-4 lg:px-20 lg:text-4xl text-white text-stroke'>
+            <p className='text-lg flex mb-10 px-4 lg:px-20 lg:text-4xl text-white text-strokes'>
                 As long as you buckle in for the ride and stick to the course plotted by the dev team, you’ll always be on the winning track forward.
                 <br />
                 <br />
@@ -20,7 +20,7 @@ function Anime() {
 
             <div className="btn flex flex-col lg:flex-row ">
                 <a href="http://" target="_blank" rel="noopener noreferrer">
-                    <img src={Apeblack} alt="" className='lg:px-10' />
+                    <img src={Apenow222} alt="" className='lg:px-10' />
 
                 </a>
 

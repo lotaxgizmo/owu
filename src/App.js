@@ -11,7 +11,8 @@ import Footer from './components/Footer';
 
 function App() {
   return (
-    <div className="flex flex-col items-center justify-center">
+    <div className="flex flex-col items-center justify-center relative">
+
       <Hero />
       <Heromob />
       <About />

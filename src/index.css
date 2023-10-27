@@ -49,7 +49,63 @@ body{
 
   /* Custom CSS for text with a stroke */
 .text-stroke {
-  -webkit-text-stroke: 1px #000; /* Stroke width and color for WebKit browsers */
-  text-stroke: 1px #000; /* Stroke width and color for non-WebKit browsers */
+  -webkit-text-stroke: 1px #ffffff; /* Stroke width and color for WebKit browsers */
+  text-stroke: 1px #ffffff; /* Stroke width and color for non-WebKit browsers */
   color: transparent; /* Make the text transparent to show only the stroke */
 }
+
+
+
+
+
+
+.hamburger-header {
+  display: flex;
+  align-items: center;
+}
+
+.menu-icon {
+  cursor: pointer;
+}
+
+.bar {
+  width: 30px;
+  height: 3px;
+  background-color: #ffffff;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.open .bar:nth-child(1) {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.open .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.open .bar:nth-child(3) {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+}
+
+.menu li {
+  margin: 10px;
+  font-sxize: 1.2rem;
+  display: none;
+}
+
+.open .menu li {
+  display: block;
+}
+
+
+
+
