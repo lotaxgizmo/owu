@@ -30,7 +30,7 @@ function HamburgerHeader() {
 
                     <div className='w-full h-14 justify-between flex align-middle items-center text-black'>
 
-                        <a href="http://pepefork.com" >
+                        <a href="http://owu.life" >
                             <img src={logo} alt="" className='w-14 rounded-full' />
                         </a>
                         <div className='mr-5'>
@@ -48,9 +48,9 @@ function HamburgerHeader() {
                             target="_blank" rel="noopener noreferrer"><ul>TELEGRAM</ul></a>
                         <a className='border-b-[1px] pt-[5px] border-black' href="https://twitter.com/OwU_eth"
                             target="_blank" rel="noopener noreferrer"><ul>TWITTER</ul></a>
-                        <a className='border-b-[1px] pt-[5px] border-black' href="/#"
+                        <a className='border-b-[1px] pt-[5px] border-black' href="https://www.dextools.io/app/en/ether/pair-explorer/0x5ed49048f265982f0c8b48e2a81e880634c6cffe"
                             target="_blank" rel="noopener noreferrer"><ul>DEXTOOLS</ul></a>
-                        <a className='border-b-[1px] pt-[5px] border-black' href="/#"
+                        <a className='border-b-[1px] pt-[5px] border-black' href="https://app.uniswap.org/swap?&chain=mainnet&use=v2&outputCurrency=0xc0b89de4966cf0fd9464cfe8f6f3d76ae8a44528"
                             target="_blank" rel="noopener noreferrer"><ul>BUY OWU</ul></a>
 
 

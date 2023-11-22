@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react';
 import Circles from '../assets/Circles.svg'
 import Dexbtn from '../assets/Dexbtn.svg'
 import Menubtn from '../assets/Menubtn.svg'
@@ -11,7 +11,24 @@ import Apemain from '../assets/Apemain.svg'
 import Rocketr from '../assets/Rocketr.png'
 import Rocketl from '../assets/Rocketl.png'
 
+
+
+
 function Hero() {
+
+    const textToCopy = '0xc0B89De4966CF0fd9464cfE8f6F3D76AE8A44528';
+    const [isCopied, setIsCopied] = useState(false);
+
+    const handleCopyClick = () => {
+        navigator.clipboard.writeText(textToCopy);
+        setIsCopied(true);
+
+        // Reset the "Copied" state after a short delay
+        setTimeout(() => {
+            setIsCopied(false);
+        }, 1500);
+    };
+
     return (
         <div className='hidden lg:flex flex-col justify-center align-middle self-center items-center relative'>
             <img src={Rocketr} alt="" className='absolute w-[828px] right-[-343px] bottom-[-302px] z-20 vibrate-2' />
@@ -38,28 +55,37 @@ function Hero() {
                         <a className='mx-2' href=" https://twitter.com/OwU_eth" target="_blank" rel="noopener noreferrer">
                             <img src={Twitterbtn} alt="" />
                         </a>
-                        <a className='mx-2' href="http://" target="_blank" rel="noopener noreferrer">
+                        <a className='mx-2' href="https://www.dextools.io/app/en/ether/pair-explorer/0x5ed49048f265982f0c8b48e2a81e880634c6cffe" target="_blank" rel="noopener noreferrer">
                             <img src={Dexbtn} alt="" />
                         </a>
-                        <a className='mx-2' href="http://" target="_blank" rel="noopener noreferrer">
+                        <a className='mx-2 BUY' href="https://app.uniswap.org/swap?&chain=mainnet&use=v2&outputCurrency=0xc0b89de4966cf0fd9464cfe8f6f3d76ae8a44528" target="_blank" rel="noopener noreferrer">
                             <img src={Menubtn} alt="" />
                         </a>
 
                     </div>
                 </div>
 
-                <p className='text-6xl text-black flex z-10 mt-20'>
+
+                <button className='text-white text-lg block z-10 mt-2 ' onClick={handleCopyClick}>
+                    <p className='text-2xl hover:text-3xl transition-all'>
+                        CA: 0xc0B89De4966CF0fd9464cfE8f6F3D76AE8A44528
+                    </p>
+                    {isCopied ? 'Copied!' : 'Copy to Clipboard'}
+                </button>
+
+                <p className='text-6xl text-black flex z-10 mt-5'>
                     UNLEASH THE
                 </p>
                 <img src={Owuhero} alt="" className='  z-10 -mt-24 mb-40' />
 
-                <a href="http://" target="_blank" rel="noopener noreferrer" className=' z-30'>
+                <a href="https://app.uniswap.org/swap?&chain=mainnet&use=v2&outputCurrency=0xc0b89de4966cf0fd9464cfe8f6f3d76ae8a44528" target="_blank" rel="noopener noreferrer" className=' z-30'>
                     <img src={Apemain} alt="" className='  z-10  shadow-2xl ' />
                 </a>
             </div>
 
         </div>
     )
+
 }
 
-export default Hero
+export default Hero;

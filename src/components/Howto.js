@@ -21,7 +21,7 @@ function Howto() {
                 The exact formula will be outlined in the coming weeks, and will ensure a smooth ride towards a one-way highway of gains and Ethereum printing.
             </p>
             <div className="btn flex flex-col lg:flex-row ">
-                <a href="http://" target="_blank" rel="noopener noreferrer">
+                <a href="https://app.uniswap.org/swap?&chain=mainnet&use=v2&outputCurrency=0xc0b89de4966cf0fd9464cfe8f6f3d76ae8a44528" target="_blank" rel="noopener noreferrer">
                     <img src={Apenow222} alt="" className='lg:px-10' />
 
                 </a>
