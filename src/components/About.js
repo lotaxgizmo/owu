@@ -10,9 +10,6 @@ function About() {
             <h2 className='text-5xl mt-5 mb-5 lg:text-9xl'>
                 The Formula
             </h2>
-            <h2 className='text-5xl mt-5 mb-5 lg:text-9xl'>
-                yooooooooooo
-            </h2>
             <p className='text-lg flex mb-10 px-4 lg:px-20 lg:text-4xl'>
                 OwU. An abbreviation that suggests a supercharged highway originating from your buy button starting line, destined to climb only upwards towards wherever you want a token to take you.
                 <br />
