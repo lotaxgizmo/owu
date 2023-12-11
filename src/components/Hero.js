@@ -46,6 +46,12 @@ function Hero() {
                     <p className='text-3xl flex'>
                         OWU.EXE
                     </p>
+                    <p className='text-3xl flex'>
+                        yooooooooooo
+                    </p>
+                    <p className='text-3xl flex'>
+                        gimbljimbl GOOD
+                    </p>
 
                     <div className="buttons flex justify-around">
 
